@@ -6,7 +6,7 @@ s = Service(r"C:\My Projects\Laptops Web Scraping\msedgedriver.exe")
 driver = webdriver.Edge(service=s)
 
 base_url = "https://www.flipkart.com/search?q=laptops&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&page="
-
+ 
 try:
     for page in range(1, 42):
         url = base_url + str(page)
